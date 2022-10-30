@@ -11,7 +11,7 @@
                       <label for='newtask'>
                         <input
                           class='form-control form-control'
-                          placeholder='destination'
+                          placeholder='actions'
                           type='text'
                           v-model='newTask'
                         />
