@@ -1,5 +1,5 @@
 <template>
-  <section class='vh-100' style='background-color: #9a616d'>
+  <section class='vh-100' style='background-color: #DFF1ED'>
     <div class='container py-5 h-100'>
       <div class='row d-flex justify-content-center align-items-center h-100'>
         <div class='col col-xl-10'>
@@ -10,13 +10,13 @@
                 <div class='card-body p-4 p-lg-5 text-black'>
                   <form>
                     <div class='d-flex align-items-center mb-3 pb-1'>
-                      <span class='h1 fw-bold mb-0'
-                        >Let´s create a new account!</span
+                      <span class='h1 fw- mb-0' style="margin:auto"
+                        >Create a new account</span
                       >
                     </div>
                     <div class='form-outline mb-4'>
                       <label class='form-label' for='new-email'
-                        >Your email address
+                        >Email address
                         <input
                           type='email'
                           id='new-email'
@@ -151,9 +151,10 @@ export default {
 </script>
 <style>
 .authimg2 {
-  background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp');
+  background-image: url('../assets/passw.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   border-radius: 1rem 0 0 1rem;
 }
 </style>

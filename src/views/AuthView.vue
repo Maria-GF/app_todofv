@@ -11,8 +11,8 @@
                 <div class='card-body p-4 p-lg-5 text-black'>
                   <form>
                     <div class='d-flex align-items-center mb-3 pb-1'>
-                      <span class='h1 fw mb-0'
-                        >Welcome to your Daily Planner</span
+                      <span class='h1 fw bold mb-0' style="margin:auto"
+                        >Your Daily Planner</span
                       >
                     </div>
 
@@ -162,9 +162,10 @@ p {
   margin-top: 10px;
 }
 .authimg {
-  background-image: url('../assets/pens.webp');
+  background-image: url('../assets/clip.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
+  background-position: center;
   border-radius: 1rem 0 0 1rem;
-}
+ }
 </style>

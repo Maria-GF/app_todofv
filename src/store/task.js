@@ -17,7 +17,7 @@ export default defineStore('tasks', {
     async addTask(title, userId) {
       const { data: newTask, error } = await supabase
         .from('tasks')
-        .insert([{ title, user_id: userId }]);
+        .insert([{ title, user_id: userId, is_complete:false }]);
       if (error) throw error;
       this.tasks.unshift(newTask[0]);
     },
