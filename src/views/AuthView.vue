@@ -1,5 +1,5 @@
 <template>
-  <section class='vh-100' style='background-color: #DFF1ED'>
+  <section class='vh-100'>
     <div class='container py-5 h-100'>
       <div class='row d-flex justify-content-center align-items-center h-100'>
         <div class='col col-xl-10'>
@@ -11,8 +11,8 @@
                 <div class='card-body p-4 p-lg-5 text-black'>
                   <form>
                     <div class='d-flex align-items-center mb-3 pb-1'>
-                      <span class='h1 fw bold mb-0' style="margin:auto"
-                        >Your Daily Planner</span
+                      <span class='h1 fw-bold mb-0' style="margin:auto"
+                        >Daily Planner</span
                       >
                     </div>
 
@@ -51,7 +51,7 @@
                         class='btn btn-primary btn-lg btn-block'
                         type='button'
                         @click='handleSignIn'
-                      >
+                      style="background-color: #5151e3">
                         Sign In
                       </button>
                     </div>
@@ -146,7 +146,13 @@ export default {
 };
 </script>
 <style>
+body{
+  
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(181,182,222,1) 63%, rgba(148,233,213,1) 100%);
+}
 .cardauth {
+  box-shadow: 5px 5px 15px 5px #667A6F;
   background-color: whitesmoke;
   background-repeat: no-repeat;
   background-size: cover;

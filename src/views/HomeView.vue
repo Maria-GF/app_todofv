@@ -1,5 +1,5 @@
 <template>
-  <section class='vh-100' style='background-color: #a6d7d7'>
+  <section class='vh-100' >
     <div class='container py-5 h-100'>
       <div class='row d-flex justify-content-center align-items-center h-100'>
         <div class='col col-xl-10'>
@@ -11,7 +11,7 @@
                       <label for='newtask'>
                         <input
                           class='form-control form-control'
-                          placeholder='actions'
+                          placeholder='Actions'
                           type='text'
                           v-model='newTask'
                         />
@@ -22,7 +22,7 @@
                     </article>
                     <table class='tasktable'>
                       <tr>
-                        <th>Where</th>
+                        <th>Action</th>
                         <th>Add date</th>
                         <th>Done(✓)</th>
                         <th>What to do</th>
@@ -81,7 +81,7 @@
                     <button
                       class='btn btn-light btn-sm signout'
                       @click='handleSignOut'
-                    >
+                    style="background-color: #e4ecea">
                       Sign Out
                     </button>
                   </div>
@@ -159,6 +159,14 @@ export default {
 };
 </script>
 <style>
+body{
+  
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(181,182,222,1) 63%, rgba(148,233,213,1) 100%);
+}
+.homecard {
+box-shadow: 5px 5px 15px 5px #667A6F;
+}
 .tasktable {
   width: 80%;
   margin-top: 40px;
@@ -192,5 +200,11 @@ h1 {
    .btn-sm {
     font-size: 10px;
    }
+}
+@media (max-width: 375px) {
+  .btn-secondary{
+    margin-top: 20px;
+    width: 40%;
+  }
 }
 </style>

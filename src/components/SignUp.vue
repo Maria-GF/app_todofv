@@ -1,5 +1,5 @@
 <template>
-  <section class='vh-100' style='background-color: #DFF1ED'>
+  <section class='vh-100'>
     <div class='container py-5 h-100'>
       <div class='row d-flex justify-content-center align-items-center h-100'>
         <div class='col col-xl-10'>
@@ -10,7 +10,7 @@
                 <div class='card-body p-4 p-lg-5 text-black'>
                   <form>
                     <div class='d-flex align-items-center mb-3 pb-1'>
-                      <span class='h1 fw- mb-0' style="margin:auto"
+                      <span class='h1 fw-bold mb-0' style="margin:auto"
                         >Create a new account</span
                       >
                     </div>
@@ -22,7 +22,7 @@
                           id='new-email'
                           class='form-control form-control-lg'
                           v-model='newUserEmail'
-                          placeholder='example@gmail.com'
+                          placeholder='email@email.com'
                           required
                         />
                       </label>
@@ -36,7 +36,7 @@
                           id='new-password'
                           class='form-control form-control-lg'
                           v-model='newUserPassword'
-                          placeholder='new password'
+                          placeholder='New Password'
                           required
                         />
                       </label>
@@ -50,7 +50,7 @@
                           id='confirm-password'
                           class='form-control form-control-lg'
                           v-model='confirmPassword'
-                          placeholder='confirm password'
+                          placeholder='Confirm Password'
                         />
                       </label>
                     </div>
@@ -61,6 +61,7 @@
                         @click.prevent='handleSignUp'
                         class='btn btn-dark btn-lg btn-block'
                         type='button'
+                        style="background-color: #5151e3"
                       >
                         Sign up
                       </button>
@@ -150,6 +151,11 @@ export default {
 };
 </script>
 <style>
+body{
+  
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(181,182,222,1) 63%, rgba(148,233,213,1) 100%);
+}
 .authimg2 {
   background-image: url('../assets/passw.jpg');
   background-size: cover;
