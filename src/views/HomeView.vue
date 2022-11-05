@@ -6,12 +6,12 @@
           <div class='card homecard' style='border-radius: 1rem'>
                 <div class='card-body p-4 p-lg-5 text-black'>
                   <div class='home'>
-                    <h1>What's on for today?</h1>
+                    <h1><b>What's on for today?</b></h1>
                     <article>
                       <label for='newtask'>
                         <input
                           class='form-control form-control'
-                          placeholder='Actions'
+                          placeholder='Activities'
                           type='text'
                           v-model='newTask'
                         />
@@ -22,10 +22,10 @@
                     </article>
                     <table class='tasktable'>
                       <tr>
-                        <th>Action</th>
+                        <th>Activity</th>
                         <th>Add date</th>
                         <th>Done(✓)</th>
-                        <th>What to do</th>
+                        <th>In Review</th>
                       </tr>
                       <tr v-for='task in tasks' :key='task.id'>
                         <td>
@@ -205,6 +205,7 @@ h1 {
   .btn-secondary{
     margin-top: 20px;
     width: 40%;
+    margin-left: auto;
   }
 }
 </style>
