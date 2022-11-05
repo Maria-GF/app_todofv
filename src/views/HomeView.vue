@@ -25,7 +25,7 @@
                         <th>Activity</th>
                         <th>Add date</th>
                         <th>Done(✓)</th>
-                        <th>In Review</th>
+                        <th>Checklist</th>
                       </tr>
                       <tr v-for='task in tasks' :key='task.id'>
                         <td>
